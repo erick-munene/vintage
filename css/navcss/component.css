@@ -1,23 +1,26 @@
 /* Common styles for all menus */
-.menu {
-	line-height: 1;
-	margin: 0 auto 3em;
-}
+/*.menu {
+	line-height: 0;
+	margin: 20 auto;
+
+}*/
+
+
 
 .menu__list {
 	position: relative;
 	display: -webkit-flex;
-	display: flex;
+	/*display: fixed;*/
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 }
 
 .menu__item {
-	display: block;
-	margin: 1em 0;
+	display: inline-block;
+	margin:0 auto;
 }
 
 .menu__link {
@@ -1455,7 +1458,7 @@
 /* Valentine */
 .menu--valentine .menu__item {
 	position: relative;
-	margin: 0 1em;
+	margin: 0 3em;
 }
 
 .menu--valentine .menu__link {
@@ -1463,7 +1466,7 @@
 	display: block;
 	min-width: 105px;
 	text-align: center;
-	color: black;
+	color: crimson;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
@@ -1543,6 +1546,9 @@
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 }
+
+
+
 
 /* Puck (by @eden_sg) */
 .menu--puck .menu__link {
@@ -2510,7 +2516,7 @@
 .menu--invulner .menu__link::before {
 	content: '';
 	position: absolute;
-	left: 50%;
+	/*left: 50%;*/
 	top: 50%;
 	width: 0;
 	height: 0;
