@@ -18,13 +18,30 @@ font-size: 6em;
 #navi{
     
 /*   position: fixed;*/
+    
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+	
+/*
+    bottom: 0;
+    height: 44px;
+    padding: 13px 0;
+    position: absolute;
+*/
+    width: 100%;
+    
+    
+}
+
+.sticky {
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 100;
     border-top: 0;
-	background: black;
-    
 }
 
 
@@ -38,6 +55,9 @@ font-size: 6em;
     height: auto;
     border-bottom: 20px;
     border-bottom-color: navajowhite;
+    border-bottom: solid 1px #e5e5e5;
+    border-top: solid 1px #e5e5e5;
+    padding: 90px;
 }
 
 #services h1{
@@ -56,4 +76,7 @@ font-size: 6em;
     max-height: 500px;
     width: 100%;
     max-width: 2500px;
+    border-radius: 2em;
+    
+
 }

@@ -16,6 +16,7 @@
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
+    background-color:  rgba(0, 0, 0, 1);
 }
 
 .menu__item {
@@ -1467,6 +1468,7 @@
 	min-width: 105px;
 	text-align: center;
 	color: crimson;
+    
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
