@@ -5,6 +5,7 @@
 	background-size:contain;
 	max-width:2800px; 
 	height: 2000px;
+   
 }
 
 .container h1{
@@ -12,6 +13,8 @@ text-align: center;
 color: white;
 padding-top: 120%;
 font-size: 6em;
+/*    display: inline;*/
+    z-index: 10;
     
 }
 
