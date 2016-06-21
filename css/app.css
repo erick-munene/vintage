@@ -2,9 +2,9 @@
 	background: url(../img/main.jpg) no-repeat center;
 	background-position: center;
 	width: 100%;
-	background-size:cover;
+	background-size:contain;
 	max-width:2750px; 
-	height: 2089px;
+	height: 2000px;
 }
 
 .container h1{
