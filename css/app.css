@@ -1,85 +1,112 @@
 .container{
-	background: url(../img/main.jpg) no-repeat center;
-	background-position: center;
-	width: 100%;
-	background-size:contain;
-	max-width:2800px; 
-	height: 2000px;
-   
+background: url(../img/main.jpg) no-repeat center;
+background-position: center;
+width: 100%;
+background-size:contain;
+max-width:2800px; 
+height: 2000px;
+
 }
 
 .container h1{
 text-align: center;
 color: white;
-padding-top: 120%;
+/*padding-top: 120%;*/
 font-size: 6em;
 /*    display: inline;*/
-    z-index: 10;
-    
+z-index: 110;
+top: 20;  
 }
 
 #navi{
-    
+
 /*   position: fixed;*/
-    
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
-	
+
+left: 0;
+top: 0;
+z-index: 100;
+border-top: 0;
+
 /*
-    bottom: 0;
-    height: 44px;
-    padding: 13px 0;
-    position: absolute;
+bottom: 0;
+height: 44px;
+padding: 13px 0;
+position: absolute;
 */
-    width: 100%;
-    
-    
+width: 100%;
+
+
 }
 
 .sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+z-index: 100;
+border-top: 0;
 }
 
 
 
 
 /*==========================
-          services
+social media overlay
+============================*/
+.overlay{  
+background:rgba(0,0,0,.75);
+text-align:center;
+height: 100%;
+width: 100%;
+
+padding:45px 0 66px 0;
+opacity:1;
+-webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;}
+
+#box2:hover .overlay {
+opacity:1;}
+
+#box1:hover .overlay {
+opacity:1;}
+
+#plus       {  font-family:Helvetica;
+font-weight:900;
+color:rgba(255,255,255,.85);
+font-size:1.2em;}
+
+
+
+/*==========================
+           services
 ============================*/
 
 #services{
-    height: auto;
-    border-bottom: 20px;
-    border-bottom-color: navajowhite;
-    border-bottom: solid 1px #e5e5e5;
-    border-top: solid 1px #e5e5e5;
-    padding: 90px;
+height: auto;
+border-bottom: 20px;
+border-bottom-color: navajowhite;
+border-bottom: solid 1px #e5e5e5;
+border-top: solid 1px #e5e5e5;
+padding: 90px;
 }
 
 #services h1{
-    padding-top: 4%;
-    text-align: center;
-    font-size: 4em;
-    font-style: normal;
+padding-top: 4%;
+text-align: center;
+font-size: 4em;
+font-style: normal;
 }
 
 #services p{
-    text-align: center;
-    font-size: 1.2em;
+text-align: center;
+font-size: 1.2em;
 }
 
 #services img{
-    max-height: 500px;
-    width: 100%;
-    max-width: 2500px;
-    border-radius: 2em;
-    
+max-height: 500px;
+width: 100%;
+max-width: 2500px;
+border-radius: 2em;
+
 
 }
