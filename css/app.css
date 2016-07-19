@@ -305,13 +305,15 @@ section hr {
           services section
 ============================*/
 .one{
+    opacity: .9;
      margin-top: 50%;
     color: #FCFCFC;
+    background: rgba(0,0,5,9);
 }
 
 .carshow{
-    opacity: .9;
-    background: rgba(0,0,0,9);
+    
+    
     z-index: 1500;
     display: block;
 /*    margin-top: 50%;*/
@@ -319,7 +321,7 @@ section hr {
 
 .carshow2{
     opacity: .9;
-    background: rgba(0,0,0,9);
+    
     z-index: 1500;
     display: block;
 /*    margin-top: 50%;*/
@@ -327,7 +329,24 @@ section hr {
     
 }
 
+/*==========================
+          events section
+============================*/
+.events{
+    background: rgba(0,0,0,9);
+    opacity: .9;
+    color: #CFCFCF;
+}
 
+.eventright{
+    
+    float: right;
+    
+}
+
+.eventleft{
+    
+}
 
 /*==========================
            services
