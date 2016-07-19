@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-</head>
+    </head>
 
 <body>
 
@@ -74,10 +74,26 @@
                 </div>
             </li>
         </ul>
+        
+        <div class="slide2">
+            <span></span>
+        </div>
 
     </div>
+    
+ <!-- 
+            ===================== services section ======================
+-->
 <div class="row expanded">
-    <div class=""
+    <div class="large-6 small-12 carshow">
+        
+        <h1>CAR SHOW</h1>
+        <p>The quality of your work, in the long run, is the deciding factor on how much your services are valued by the world.We promise to deliver to you award-winning design solutions that embrace widely differing target audiences.</p>
+
+    </div>
+    <div class="large-6 small-12 carshow2">
+       <img src="img/10.jpg"> 
+    </div>
     </div>
 
     <div class="row expanded">
@@ -101,38 +117,7 @@
     <script src="js/app.js"></script>
 
 
-    <script>
-        (function() {
-            [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-                var menuItems = menu.querySelectorAll('.menu__link'),
-                    setCurrent = function(ev) {
-                        //                        ev.preventDefault();
-                        var item = ev.target.parentNode; // li
-                        // return if already current
-                        if (classie.has(item, 'menu__item--current')) {
-                            return false;
-                        }
-                        // remove current
-                        classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
-                        // set current
-                        classie.add(item, 'menu__item--current');
-                    };
-                [].slice.call(menuItems).forEach(function(el) {
-                    el.addEventListener('click', setCurrent);
-                });
-            });
-            [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-                link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-                new Clipboard(link);
-                link.addEventListener('click', function() {
-                    classie.add(link, 'link-copy--animate');
-                    setTimeout(function() {
-                        classie.remove(link, 'link-copy--animate');
-                    }, 300);
-                });
-            });
-        })(window);
-    </script>
+    
 
 
 
