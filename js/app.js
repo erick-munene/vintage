@@ -73,35 +73,24 @@ $(document).ready(function () {
 
 
 
-//hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+//  =================  slider ==================
 
-$(document).ready(function () {
-    function t() {
-        $(this).scrollTop() > 200 ? $(".go-top").fadeIn(500) : $(".go-top").fadeOut(300)
-    }
-    $(window).scroll(t), $(".go-top").click(function (t) {
-        t.preventDefault(), $("html, body").animate({
-            scrollTop: 0
-        }, 1e3)
-    }), t()
-    
-}), $(function () {
-    $("a[href*=#]:not([href=#])").click(function () {
-        if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-            var t = $(this.hash);
-            if (t = t.length ? t : $("[name=" + this.hash.slice(1) + "]"), t.length) return $("html,body").animate({
-                scrollTop: t.offset().top
-            }, 1e3), !1
-        }
-    })
-}), $(document).ready(function () {
-    $(window).scroll(function () {
-        $(".hideme").each(function () {
-            var t = $(this).offset().top + $(this).outerHeight(),
-                o = $(window).scrollTop() + $(window).height();
-            o > t && $(this).animate({
-                opacity: "1"
-            }, 500)
-        })
-    })
-});
+$(document).ready(function(){
+  
+  $(".Modern-Slider").slick({
+    autoplay:true,
+    autoplaySpeed:10000,
+    speed:600,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    dots:true,
+    pauseOnDotsHover:true,
+    cssEase:'linear',
+   // fade:true,
+    draggable:false,
+    prevArrow:'<button class="PrevArrow"></button>',
+    nextArrow:'<button class="NextArrow"></button>', 
+  });
+  
+})

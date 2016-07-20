@@ -6,9 +6,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
-
+<link rel='stylesheet prefetch' href='https://googledrive.com/host/0B1RR6fhjI2QROGt0MTFoVkhMdUk/fonts.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    
+    
+    
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    
     </head>
 
 <body>
@@ -106,7 +111,7 @@ events section
 -->
     
     <div class="row expanded events" data-equilizer-by-row>
-    <div class="large-6 columns eventleft" >
+    <div class="large-6 columns eventleft" data-equilizer-watch>
         <img src="img/10.jpg">
         
         </div>
@@ -121,19 +126,97 @@ events section
         </div>
     </div>
 
-    <div class="row expanded">
+    <div class="row expanded services" data-equilizer>
 
-        <div class="small-8 columns" id="services">
+        <div class="small-8 columns" id="services" data-equilizer-watch>
             <h1>OUR SERVICES</h1>
 
             <p>The quality of your work, in the long run, is the deciding factor on how much your services are valued by the world.We promise to deliver to you award-winning design solutions that embrace widely differing target audiences.</p>
 
         </div>
 
-        <div class="small-4 columns" id="services">
+        <div class="small-4 columns" id="services" data-equilizer-watch>
             <img src="img/main.jpg">
 <br>
         </div>
+    </div>
+    
+    
+    
+    <!-- 
+===================== 
+slider section 
+======================
+-->
+    
+    
+    <div class="row expanded slide">
+    
+    <!-- Slider -->
+<div id="slider">
+  <div class="slides">
+      
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Lorem ipsum dolor</h1>
+          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+        </div>
+      </div>
+      <div class="imag">
+        <img src="img/11.jpg">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Lorem ipsum dolor</h1>
+          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+        </div>
+      </div>
+      <div class="imag">
+        <img src="img/12.jpg">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Lorem ipsum dolor</h1>
+          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+        </div>
+      </div>
+      <div class="imag">
+        <img src="img/13.jpg">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h1>Lorem ipsum dolor</h1>
+          <h2>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</h2>
+        </div>
+      </div>
+      <div class="imag">
+        <img src="img/14.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="switch">
+    <ul>
+      <li>
+        <div class="on"></div>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+    
     </div>
 
     <script src="js/vendor/jquery.js"></script>
@@ -141,7 +224,30 @@ events section
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
 
-
+<!--
+<script>
+    $(document).ready(function(){
+  
+  $(".Modern-Slider").slick({
+    autoplay:true,
+    autoplaySpeed:10000,
+    speed:600,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    dots:true,
+    pauseOnDotsHover:true,
+    cssEase:'linear',
+   // fade:true,
+    draggable:false,
+    prevArrow:'<button class="PrevArrow"></button>',
+    nextArrow:'<button class="NextArrow"></button>', 
+  });
+  
+})
+    
+    </script>
+-->
     
 
 
