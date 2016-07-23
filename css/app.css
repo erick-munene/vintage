@@ -370,7 +370,7 @@ section hr {
     z-index: 1500;
     display: block;
  text-align:center;
-        margin-top: 10%;
+        margin-top: 7%;
 }
 .carshow2 {
     opacity: .9;
@@ -391,6 +391,7 @@ section hr {
 }
 .eventright {
     float: right;
+    margin-top: 5%;
 }
 .eventleft {}
 
