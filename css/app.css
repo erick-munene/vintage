@@ -7,6 +7,9 @@ h5,
 p {
     font-family: "Kreon";
 }
+a {
+    color: whitesmoke;
+}
 
 /* main screen navigation */
 
@@ -163,7 +166,7 @@ section hr {
     top: 0;
     z-index: 1200;
     padding: 10px;
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    /*    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
 }
 .bg-slideshow,
 .bg-slideshow:after {
@@ -224,7 +227,7 @@ section hr {
     align-items: center;
 }
 .bg-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    /*    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
     font-size: 240px;
     padding: 0;
     line-height: 200px;
@@ -369,8 +372,8 @@ section hr {
 .carshow {
     z-index: 1500;
     display: block;
- text-align:center;
-        margin-top: 7%;
+    text-align: center;
+    margin-top: 7%;
 }
 .carshow2 {
     opacity: .9;
@@ -393,7 +396,9 @@ section hr {
     float: right;
     margin-top: 5%;
 }
-.eventleft {}
+.eventleft {
+    margin-top: 10%;
+}
 
 /*==========================
            services
@@ -402,6 +407,7 @@ section hr {
 .services {
     background: rgba(0, 0, 5, 8);
     opacity: .9;
+    width: 100%;
 }
 #services {
     color: ghostwhite;
@@ -411,6 +417,7 @@ section hr {
     border-bottom: solid 1px #e5e5e5;
     border-top: solid 1px #e5e5e5;
     padding: 90px;
+    align-content: center;
 }
 #services h1 {
     padding-top: 4%;
@@ -827,4 +834,8 @@ section hr {
     96% {
         margin-left: 45px;
     }
+}
+
+#menu {
+    height:20%;
 }
