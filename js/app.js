@@ -1,5 +1,30 @@
 $(document).foundation()
 
+//navigation js 
+$(function () {
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+
+
+//services part css
+$("figure").mouseleave(
+    function () {
+        $(this).removeClass("hover");
+    }
+);
+
 
 
 $(document).ready(function () {
@@ -75,22 +100,22 @@ $(document).ready(function () {
 
 //  =================  slider ==================
 
-$(document).ready(function(){
-  
-  $(".Modern-Slider").slick({
-    autoplay:true,
-    autoplaySpeed:10000,
-    speed:600,
-    slidesToShow:1,
-    slidesToScroll:1,
-    pauseOnHover:false,
-    dots:true,
-    pauseOnDotsHover:true,
-    cssEase:'linear',
-   // fade:true,
-    draggable:false,
-    prevArrow:'<button class="PrevArrow"></button>',
-    nextArrow:'<button class="NextArrow"></button>', 
-  });
-  
+$(document).ready(function () {
+
+    $(".Modern-Slider").slick({
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        dots: true,
+        pauseOnDotsHover: true,
+        cssEase: 'linear',
+        // fade:true,
+        draggable: false,
+        prevArrow: '<button class="PrevArrow"></button>',
+        nextArrow: '<button class="NextArrow"></button>',
+    });
+
 })
